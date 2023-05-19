@@ -1,0 +1,281 @@
+@import "variables";
+
+.main {
+  background-image: $main-bgc;
+  height: 529px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+.find {
+  // .find-wrapper
+  &-wrapper {
+
+    max-width: 1246px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 81px;
+
+    @media (max-width: 905px) {
+      display: flex;
+      padding-top: 22px;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    @include laptop-middle-l{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @include mobile-large{
+      display: flex;
+      padding-top: 22px;
+      flex-direction: column;
+      gap: 7px;
+    }
+  }
+
+  // .find-block
+  &-block {
+    position: relative;
+  }
+
+  &-input {
+    background: rgba(31, 32, 44, 0.4);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.21);
+    border-radius: 50px;
+    width: clamp(18.125rem, 4.345rem + 68.9vw, 58rem);
+    height: 63px;
+    border: none;
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+
+
+    &::placeholder {
+      padding-left: 38px;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 22px;
+      color: #EBEBEB;
+
+      @include tablet{
+        padding-left: 10px;
+      }
+    }
+  }
+
+  // .find-btn
+  &-btn {
+    position: absolute;
+    right: 0;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 17px 38px;
+    background: #209ADA;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.64);
+    border-radius: 50px;
+    border: none;
+    margin-top: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+}
+
+.bell {
+  // .bell-circle
+  &-circle {
+    background: #F2F2F2;
+    opacity: 0.4;
+    box-shadow: 3.96625px 3.96625px 3.96625px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 58px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 905px) {
+      display: none;
+    }
+
+  }
+
+  &-bell {
+    background: black;
+  }
+}
+
+.search {
+  // .search-block
+  &-block {
+    background: #F2F2F2;
+    opacity: 0.5;
+    box-shadow: 3.96625px 3.96625px 3.96625px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 28px;
+    cursor: pointer;
+  }
+
+  // .search-btn
+  &-btn {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    border: none;
+    color: #1E4E6B;
+    cursor: pointer;
+
+  }
+}
+
+.main {
+  // .main-wrapper
+  &-wrapper {
+    max-width: 1462px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include large-laptop{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  // .main-title
+  &-title {
+    font-family: 'Segoe UI', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38.2px;
+    line-height: 49px;
+    max-width: 570px;
+    color: #EEEEEE;
+
+    @include laptop-small{
+      font-size: 25px;
+      max-width: 350px;
+      word-wrap: break-word;
+    }
+
+    @include tablet{
+      font-size: 20px;
+      max-width: 180px;
+      line-height: 35px;
+    }
+
+    @include mobile-large{
+      font-size: 15px;
+      max-width: 120px;
+      height: 357px;
+    }
+
+  }
+}
+
+.weather {
+  // .weather-block
+  &-block {
+    background: rgba(35, 48, 81, 0.4);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 370px;
+    min-height: 210px;
+    margin-top: 34px;
+
+    @include mobile-large{
+      width: 186px;
+    }
+  }
+
+  // .weather-info
+  &-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 13px;
+  }
+
+  // .weather-date
+  &-date {
+  }
+
+  // .weather-date-list
+  &-date-list {
+
+    @include mobile-large{
+      display: none;
+    }
+  }
+
+  &-date-list {
+    list-style-type: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12.953px;
+    line-height: 17px;
+  }
+}
+
+.weather-info span{
+  color: #FFFFFF;
+  align-self: center;
+  font-size: 46.3437px;
+  line-height: 62px;
+  /* identical to box height */
+}
+
+.location {
+  // .location-block
+  &-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-top: 22px;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 27.2881px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+
+  color: #FFFFFF;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 20.1695px;
+  line-height: 27px;
+  color: #FFFFFF;
+  @include mobile-large{
+    display: none;
+  }
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon div{
+  font-weight: 400;
+  font-size: 17.0869px;
+  line-height: 23px;
+  color: #FFFFFF;
+
+}

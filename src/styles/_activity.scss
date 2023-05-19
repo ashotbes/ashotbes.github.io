@@ -1,0 +1,61 @@
+@import "variables";
+
+img {
+  height: 105px;
+  width: 100px;
+
+}
+
+.activity {
+  // .activity-wrapper
+  &-wrapper {
+    max-width: 1466.19px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  // .activity-title
+  &-title {
+    margin-top: 28px;
+    padding-left: 34px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #171717;
+  }
+
+  &-title p {
+    margin: 0;
+  }
+
+  // .activity-body
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 59px;
+
+    @include tablet {
+      gap: 10px;
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &-item-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #1E202C;
+    text-align: center;
+  }
+}

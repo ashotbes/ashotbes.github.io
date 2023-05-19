@@ -1,0 +1,160 @@
+@import "variables";
+
+
+.footer {
+  background-color: $footer-bgc;
+
+  // .footer-wrapper
+  &-wrapper {
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile-large{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .footer-contact
+  &-contact {
+  }
+
+  // .footer-social
+  &-social {
+    display: flex;
+    gap: 30px;
+    padding-top: 33px;
+  }
+}
+
+.call {
+  font-weight: 400;
+  font-size: 18.1952px;
+  line-height: 21px;
+  color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  padding-top: 33px;
+
+  & p {
+    padding-left: 15px;
+  }
+}
+
+.location {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.1952px;
+  line-height: 21px;
+  align-items: center;
+  display: flex;
+  color: #FFFFFF;
+  max-width: 210px;
+
+  & p {
+    padding-left: 20px;
+  }
+}
+
+.mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.1952px;
+  line-height: 21px;
+  align-items: center;
+  display: flex;
+  color: #FFFFFF;
+
+  & p {
+    padding-left: 15px;
+  }
+}
+
+
+.social-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook {
+  display: flex;
+  align-items: center;
+  font-size: 18.3501px;
+  line-height: 22px;
+  color: #E9E9E9;
+  gap: 12px;
+}
+
+.twitter {
+  display: flex;
+  align-items: center;
+  font-size: 18.3501px;
+  line-height: 22px;
+  color: #E9E9E9;
+  gap: 12px;
+}
+
+.social-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.inst {
+  display: flex;
+  align-items: center;
+  font-size: 18.3501px;
+  line-height: 22px;
+  color: #E9E9E9;
+  gap: 12px;
+}
+
+.messenger {
+  display: flex;
+  align-items: center;
+  font-size: 18.3501px;
+  line-height: 22px;
+  color: #E9E9E9;
+  gap: 12px;
+}
+
+.end {
+  background-color: #328099;
+  // .end-wrapper
+  &-wrapper {
+    max-width: 1680px;
+    background-color: #328099;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile-large{
+      flex-direction: column;
+      gap: 9px;
+    }
+
+  }
+}
+
+.created {
+  font-weight: 400;
+  font-size: 18.8741px;
+  line-height: 22px;
+  color: #DADADA;
+}
+
+.rights {
+  font-weight: 400;
+  font-size: 18.8741px;
+  line-height: 22px;
+  color: #F3F3F3;
+}
+
+.update {
+  font-weight: 400;
+  font-size: 18.8741px;
+  line-height: 22px;
+  color: #DADADA;
+}
